@@ -1,5 +1,2 @@
-# Headline
-
-> An awesome project.
-
+# GPGPU入门
 

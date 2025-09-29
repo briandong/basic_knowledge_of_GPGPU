@@ -1,6 +1,4 @@
 
-![logo](images/transformers.jpg)
+![logo](images/gpgpu.jpg)
 
-# docsify sample
-
-A docsify sample document website.
+# GPGPU入门
