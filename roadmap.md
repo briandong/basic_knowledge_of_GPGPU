@@ -6,7 +6,7 @@
 
 最初是没有GPU的，CPU把每个像素的RGB信息依次写入内存中的Frame Buffer，再输出到显示器上进行显示。
 
-随着游戏的发展，对于图形处理的需求日益显现。
+随着游戏（尤其是3D游戏）的发展，对于图形图像处理与渲染的需求日益显现。
 
 于是，市面上出现了多家提供显卡方案的厂家，比如S3/Trident/Voodoo等。
 
@@ -23,8 +23,8 @@
 * Rasterize 光栅化：填充三角形所覆盖的像素
 * Vertex/Pixel Shader：可编程模块，单入单出
 
-![rasterize](images/rasterize.jpg)
-> Rasterizer
+![rasterize](images/gpu_rasterize.png)
+> GPU Rasterizer
 
 ## GPGPU的雏形
 
@@ -44,14 +44,15 @@
 
 ![Nvidia Cuda](images/nvidia_cuda.jpg)
 
-2006年11月，Nvidia发布了CUDA（Compute Unified Device Architecture），极大方便了普通开发者使用GPGPU。
+2007年6月，Nvidia发布了CUDA（Compute Unified Device Architecture），极大方便了普通开发者使用GPGPU。
 
-## 区别
+## 与CPU的区别
 
 ![CPU vs GPU](images/cpu_vs_gpu.png)
 > CPU与GPU的芯片布局
 
-CPU就好比一名数学博士，可以解出少量非常复杂的数学难题；而GPU就好比成千上万的小学生，可以同时并行解出海量简单的数学题。
+可以看到，CPU就好比一名数学博士，可以解出少量非常复杂的数学难题；而GPU就好比成千上万的小学生，可以同时并行解出海量简单的数学题。
 
+这里还有一个更加生动形象的版本👍：https://www.bilibili.com/video/BV1ry4y1y7KZ/?vd_source=2e06641ee84e8e76f46c93a7e025737a
 
 *参考：B站——上帝视角看GPU*
