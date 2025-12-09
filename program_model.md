@@ -9,6 +9,14 @@ Host代码通常分为三个步骤：
 2. 启动GPGPU
 3. 数据写回
 
+## 线程结构
+
+CUDA的线程结构分为三级，由上到下分别是：grid, block, thread。
+
+其中grid的数量由三维数组（x-行，y-列，z-深度）gridDim指定；block的数量由三维数组blockDim指定。
+
+CUDA使用blockIdx和threadIdx来索引grid中每个thread的位置。
+
 ## 实例
 
 矩阵乘法实例
